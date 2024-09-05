@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Form Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="css/studikasus.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Data Mahasiswa</h2>
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="tanggal_lahir">Tanggal lahir</label>
+            <input type="text" id="tanggal_lahir" name="tanggal_lahir" placeholder="dd/mm/yyyy">
+        </div>
+        <div class="form-group">
+            <label for="jenis_kelamin">Jenis Kelamin</label>
+            <select id="jenis_kelamin" name="jenis_kelamin">
+                <option value="laki-laki">Laki-Laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat"></textarea>
+        </div>
+        <h2>Komentar</h2>
+        <div class="form-group">
+            <label for="sumber">Darimana Anda mengetahui buku ini?</label>
+            <select id="sumber" name="sumber">
+                <option value="google">Google</option>
+                <option value="teman">Teman</option>
+                <option value="iklan">Iklan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Bagaimana Menurut anda terhadap buku ini?</label>
+            <div class="inline">
+                <input type="radio" id="biasa" name="pendapat" value="biasa">
+                <label for="biasa">Biasa</label>
+            </div>
+            <div class="inline">
+                <input type="radio" id="bagus" name="pendapat" value="bagus">
+                <label for="bagus">Bagus</label>
+            </div>
+            <div class="inline">
+                <input type="radio" id="menarik" name="pendapat" value="menarik">
+                <label for="menarik">Menarik</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="komentar">Komentar Anda:</label>
+            <textarea id="komentar" name="komentar"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="email_info" name="email_info">
+            <label for="email_info">Kirim ke Email bila ada info terbaru</label>
+        </div>
+        <div class="form-group submit-btn">
+            <input type="submit" value="Kirim">
+        </div>
+    </div>
+</body>
+</html>
