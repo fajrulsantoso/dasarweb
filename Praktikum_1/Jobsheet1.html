@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>From</title>
+    </head>
+    <body>
+        <div>
+            <hr>
+            <h3>Data Mahasiswa</h3>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" nama="nama" ><br><br>
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" email="email" ><br><br>
+            
+            <label for="dob">Tanggal lahir</label>
+            <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy"><br><br>
+            
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" nama="gender">
+                <option value="laki-laki">Laki Laki</option>
+                <option value="Perempuan">Perempuan</option> 
+            </select><br><br>
+            
+            <label for="address">Alamat</label>
+            <textarea id="address" nama="address" rows="5"  cols="50"></textarea><br><br>
+            <hr>
+        </div>
+
+        <div>
+            <hr>
+            <h3>Komentar</h3>
+            <label for="source">Darimana Anda mengetahui buku ini?</label>
+            <select id="source" name="source">
+                <option value="google">Google</option>
+                <option value="teman">Teman</option>
+                <option value="lainnya">Lainnya</option>
+            </select><br><br>
+            <hr>
+            
+            <hr>
+            <label>Bagaimana Menurut anda terhadap buku ini?</label>
+            <input type="radio" id="biasa" nama="opinio" value="biasa">
+            <label for="biasa">Biasa</label>
+            <input type="radio" id="bagus" name="opinion" value="bagus">
+            <label for="bagus">Bagus</label>
+            <input type="radio" id="menarik" name="opinion" value="menarik">
+            <label for="menarik">Menarik</label><br><br>
+            <hr>
+            <label for="comment">Komentar Anda:</label><br>
+            <textarea id="comment" name="comment" rows="5" cols="50"></textarea><br><br>
+            <hr>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Kirim ke Email bila ada info terbaru</label><br><br>
+            <hr>
+        </div>
+
+        <div>
+            <button type="submit">Kirim</button>
+        </div>
+    </body>
+</html>
