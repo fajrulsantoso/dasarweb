@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="first-name">First Name</label> <br>
+        <input type="text" id="first-name" name="Firstname"> <br>
+        <label for="last-name">Last Name</label> <br>
+        <input type="text" id="last-name" name="lastname"> <br>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var firstName = document.getElementById('first-name').value;
+            var lastName = document.getElementById('last-name').value;
+            var result = "";
+
+            if (firstName === "Firstname") {
+                result = "Nama: " + firstName;
+            } else {
+                result = "Last name";
+            }
+            result += "<br>Terima kasih sudah memasukan nama anda";
+
+            document.getElementById('result').innerHTML = result;
+        });
+    </script>
+</body>
+</html>
